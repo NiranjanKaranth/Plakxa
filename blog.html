@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Plakxa - Blog</title>
+	<link rel="icon" href="images/cropped-plakxa-Logo-square-1-1-192x192.png" sizes="192x192" />
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+	<link rel='stylesheet' type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="10" id="body-main">
+	<div class="container-fluid" id="wrapper">
+		<header class="col-xs-12" id="main-header">
+			<div class="navbar navbar-default pull-right"> <!-- navbar-fixed-top -->
+				<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				</a>
+				<div class="navbar-collapse collapse pull-right">
+					<ul class="nav navbar-nav">
+					    <li><a href="index.html">HOME</a></li>
+					    <li><a href="index.html#about_plakxa">ABOUT US</a></li>
+					    <li><a href="index.html#our-offerings">OFFERINGS</a></li>
+					    <li><a href="index.html#testimonial_carousel">RESOURCES</a></li>
+						<li><a href="index.html#staffing_solutions">STAFFING SOLUTIONS</a></li>
+					    <li><a href="blog.html">BLOG</a></li>
+					    <li><a href="index.html#contact-us" data-toggle="modal" data-target="#myModal">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+	    </header>
+
+	    <!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog modal-lg">
+		    <!-- Modal content-->
+			    <div class="modal-content col-sm-12 col-xs-10 col-xs-offset-1 contact-box">
+			    	<button type="button" class="close" data-dismiss="modal">&times;</button>
+			    	<div class="col-sm-7 col-xs-12">
+				        <div class="modal-header">
+				          	<h2 class="modal-title">Contact Form</h2>
+				        </div>
+				        <form method="post" action="mailto:akanksha@greenhousebrandworks.com?Subject=Query" ENCTYPE="text/plain">
+				        	<div class="modal-body">
+						        <div class="form-group">
+						            <label for="name" class="form-control-label"><i class='fas fa-user-circle form-icons'></i> Name:<span class="imp-mark">&#42;</span></label>
+						            <input type="text" name="Name" class="form-control" id="name" required>
+						        </div>
+						        <div class="form-group">
+						            <label for="email" class="form-control-label"><i class='fas fa-envelope-square form-icons'></i> Email:<span class="imp-mark">&#42;</span></label>
+						            <input type="email" name="Email" class="form-control" id="email" required>
+						        </div>
+						        <div class="form-group">
+						            <label for="ph-num" class="form-control-label"><i class='fas fa-phone-square form-icons'></i> Phone Number:<span class="imp-mark">&#42;</span></label>
+						            <input type="text" name="Phone Number" class="form-control" id="ph-num" required>
+						        </div>
+						        <div class="form-group">
+						            <label for="message-text" class="form-control-label"><i class='fas fa-comment-alt form-icons'></i> Message:<span class="imp-mark">&#42;</span></label>
+						            <textarea class="form-control" name="Message" id="message-text" rows="5" required></textarea>
+						        </div>
+					        </div>
+					        <div class="modal-footer">
+					        	<p class="mand-text"><span class="imp-mark">&#42;</span>All fields are mandatory.</p>
+					        	<button type="submit" class="btn btn-primary" id="submit_btn">Submit</button>
+					          	<button type="button" class="btn btn-default" data-dismiss="modal" id="close_btn">Close</button>
+					        </div>
+				        </form>
+			        </div>
+			        <div class="col-sm-3 col-xs-10 col-xs-offset-1 address">
+			        	<h3>Address:</h3>
+			        	<p>213, Sobha Aquamarine, Sarjapur Outer Ring Road, Bellandur, Bangalore, Pin - 560103</p>
+			        	<div class="col-sm-12 col-xs-12 social-icons">
+			        		<a href=""><i class='fab fa-facebook-square fa-2x soc-icon1'></i></a>
+			        		<a href="https://www.linkedin.com/company/plakxa-business-consulting-llp" target="_blank"><i class='fab fa-linkedin fa-2x soc-icon2'></i></a>
+			        	</div>
+			        </div>
+			    </div>
+		    </div>
+		</div>
+
+		<div class="jumbotron">
+		  	<h1>BLOG</h1>
+		</div>
+
+		<div class="col-sm-3 col-sm-offset-9 col-xs-4 col-xs-offset-8 search-div">
+            <input id="textSearch" type="text" name="search" placeholder="Search.." onkeyup="restore_my_div();">
+            <button id="search_image" onClick="find_my_div('search_image');">
+                <img height="32" width="30" src="images/search_icon.png">
+            </button>
+        </div>
+
+		<div class="col-xs-12 date_search_class" id="blog">
+			<div class="search_text col-xs-10 col-xs-offset-1" data-event-date="20-Jan-2019" data-index="4" id="blog_4">
+            	<div class="col-xs-12">
+	                <h2 class="blog_text_main">3 Most common ways to commercialize an IP</h2>
+	                <p class="blog_text_main_date"> JULY 21, 2020 | BHUVNESH SHARMA</p>
+	                <p class="blog_text_main_para">Do you know 90% to 98% of the patents that get filed never see light of the market? Only 2 to 10% are ever commercialized. In other words, the technology on which the patent is based in never gets to the consumer for which the technology was created. That said, commercializing of an IP is not an easy path.</p>
+                </div>
+                <div class="col-xs-12 read-more-text" id="read_more_4">
+                	<p>So, what are the best ways to commercialize any IP, more specifically patents.</p>
+                	<p>Self-commercialization – taking your IP to market on your own by producing products based on that IP. </p>
+                    <p>Licensing – </p>
+                    <ul>
+                        <li>“in-licensing”: You license someone else’s technology to create a product</li>
+                        <li>“out-licensing”: You license your technology to someone else to create a product</li>
+                        <li>“cross-licensing”: you swap your technology with someone else’s technology and then individually create products</li>
+                    </ul>
+                	<p>Outright sales of your technology to a prospective buyer, for a lumpsum and the buyer then becomes the owner of your technology.</p>
+                	<p>For steps 2 & 3, there needs to be a mechanism that connects the buyer or licensor to seller or licensee. Origiin has recently launched, first time in India, a one of its kind online platform called “Synekto” solely for this purpose – it’s a platform that connects prospective seller to buyer and vice versa.</p>
+                	<p>The name Synekto, a combination of two words “Synergy” and “Connections”, aims to be a catalyst to foster innovation and research by bringing Buyer and Seller of Technology together in one platform and enable transfer of technology seamlessly.</p>
+                	<p>Synekto is a joint initiative of Plakxa Business Consulting LLP (www.plakxa.com) and Origiin IP Solutions LLP (www.origiin.com), a leading Intellectual Property and legal service provider in India. Please visit www.synekto.com for more details or write to info@synekto.com.</p>
+                </div>
+            	<div class="col-xs-12">
+            		<button class="read-more-btn" id="read_more_btn_4" style="float: right; color: #8ca726; font-weight: bold; background-color: transparent; border: none; outline: none;">Read More &#9660;</button>
+            	</div> 
+				<hr style="color: #8ca726; border: 1px solid #8ca726;">
+            </div>
+
+            <div class="search_text col-xs-10 col-xs-offset-1" data-event-date="17-Feb-2019" data-index="1" id="blog_1">
+         		<div class="col-xs-12">
+	                <h2 class="blog_text_main">Digital Transformation – challenges in manufacturing industry</h2>
+	                <p class="blog_text_main_date"> FEBRUARY 17, 2019 | BHUVNESH SHARMA</p>
+	                <p class="blog_text_main_para">Karan, a close friend, has a factory that manufactures lithium ion batteries. Business is good, but profitability is low. He is interested in the new buzzword “digital transformation” or “Industrial IoT / Industrie 4.0” and wants to implement some of these digital technologies that in turn will help him in increasing production, reduce redundancies, digitize some of the battery manufacturing processes thereby cutting down costs and manufacturing lead time. However, he, like lot many other manufacturing units, does not know how to embark on “digital transformation” journey, what challenges he would face, what are the costs involved and whether this initiative will help him meet his objectives. He also worried about the existing investments he has made in plant and machinery and whether these investments might become redundant once he implements digital technologies.</p>
+                </div>
+                <div class="col-xs-12 read-more-text" id="read_more_1">
+                	<p>Lets discuss some challenges that Karan faces and what could be possible solutions.</p>
+                	<ol>
+                		<li>Existing equipment that is currently not “smart”. Do I need to throw away this equipment and install new smart machines?<br>This is a real challenge that people like Karan face and is one of the main factors that fuels initial hesitation for deploying digital technologies. Protection of existing investments is one of the highest priority items. But relax, technologies are currently available that help protect these investments and make dumb machines smart. Wireless enabled, multi-input fusion sensors that can the installed on the existing machines are available. Once these sensors are installed, they start transmitting critical machine related data over a wireless network to series of gateways and from there to cloud.</li>
+                		<li>Karan feels that battery manufacturing is a highly complex process with very peculiar requirements. How can he be sure which technology is best suited and will satisfy his needs.<br>Again, a real-life challenge. Best way to mitigate this is to look for a technology and implantation partner that has the right skills and hands on experience in implementing Industrial IoT solutions. Engaging a good consultant, who can help identify right technology and implementation partner also helps mitigating this challenge to a great extent.<br>Further, the partner should be well versed with the dynamics of a typical manufacturing environment, presence of other components / sub components which could be using different technologies and might be currently working in a silo mode. He should know how to interface, integrate these components / sub components to provide a holistic solution rather than a piece meal approach.</li>
+                		<li>Another problem Karan faces that internally within his team he does not have any competent resource that is well versed with new age digital technologies making a difference in world of manufacturing.<br>The answer to this problem is to look for a consultant or a technology / implementation partner that can proactively train your resources or alternately laterally hire a right resource that can work with the chosen partner.</li>
+                		<li>Is the technology and its implantation costly? How much should Karan budget?<br>This is a difficult question to answer. Best approach is to have a staged, step by step deployment and assessing at every stage if the technology being implemented, is meeting the desired outcomes.</li>
+                		<li>How does Karan measure Return on Investment (RoI)?<br>For Karan, answer partially lies in point no 4 above. A pilot deployment with limited scope and functionality can be thought of first. Its outcomes analyzed and if signs are positive, then go for larger scale deployment.</li>
+                	</ol>
+                	<p>I have listed some of the challenges / issues that Karan and people like Karan typically face while undertaking their digital transformation journey. Please not that Industrial IoT, Industrie 4.0 is a wide subject and cookie cutter approach does not work. Propper customization of the technology to your requirements plus proper implementation is the key to success.</p>
+                	<p>Want to learn more on this?<br>Call: +91 96203 00550<br>Email: bhuvnesh@plakxa.com</p>
+                </div>
+            	<div class="col-xs-12">
+            		<button class="read-more-btn" id="read_more_btn_1" style="float: right; color: #8ca726; font-weight: bold; background-color: transparent; border: none; outline: none;">Read More &#9660;</button>
+            	</div> 
+				<hr style="color: #8ca726; border: 1px solid #8ca726;">
+         	</div>
+
+         	<div class="search_text col-xs-10 col-xs-offset-1" data-event-date="14-Feb-2019" data-index="2" id="blog_2">
+            	<div class="col-xs-12">
+	                <h2 class="blog_text_main">Is your “selling cycle” in sync with your customer’s “buying cycle”?</h2>
+	                <p class="blog_text_main_date"> FEBRUARY 14, 2019 | BHUVNESH SHARMA</p>
+	                <p class="blog_text_main_para">How often it happens that you meet a prospect and make a pitch for your product or service, you come to know that he has already shortlisted his possible suppliers and you are late in the game?</p>
+                </div>
+                <div class="col-xs-12 read-more-text" id="read_more_2">
+                	<p>Does it happen that your sales person comes back saying that the prospect / customer has already consumed his budgets and has asked you to get in touch when the next budgeting happens?</p>
+                	<p>Does your sales person feel that though he has a compelling value proposition, somehow, he has missed the bus?</p>
+                	<p>As an experienced sales professional, one of your main tasks is to identify the “buying cycle” of your prospect. You need to make sure that you are reaching out to your prospect at the right time and you sales cycle is in sync with your prospect’s buying cycle.</p>
+                	<img src="images/1.jpg" alt="blog-infographic" width="100%" style="margin-top: 20px; margin-bottom: 20px;">
+                	<p>Quite a few times our sales teams are spending maximum time on “lead generation” – calls, emails, events, exhibitions etc. While lead generation is an important part of any business development activity, however we need to think beyond that; in understanding prospect’s buying cycle and then syncing our sales cycles with their buying cycles. It always helps to see things from your prospects perspective and then aligning your sales approach as per what your prospects wants.</p>
+                	<p>Quite a few times we find that either the prospect is in decision making phase and we are making our initial pitch, or we are trying to hard sell, while customer or prospect is still not sure about his need or requirement. For example, if your sales person is approaching a prospect to buy something when prospect is yet to decide what to buy that help resolving the issue he is trying to solve, your prospect might be put off. A better approach would be to understand your prospects problem, empathize with his needs and requirements, help create a state of mind where he starts see the value in what you are trying to sell. Trying to hard sell prior to this might rebound and your sales person might lose his prospect for ever.</p>
+                	<p>In such scenarios, what appears to be a promising opportunity might end up becoming a no opportunity. However, proper planning, research and relationship with the prospect helps sync buying and sales cycles.</p>
+                	<p>Want to learn more on this?<br>Call: +91 96203 00550<br>Email: bhuvnesh@plakxa.com</p>
+                </div>
+            	<div class="col-xs-12">
+            		<button class="read-more-btn" id="read_more_btn_2" style="float: right; color: #8ca726; font-weight: bold; background-color: transparent; border: none; outline: none;">Read More &#9660;</button>
+            	</div> 
+				<hr style="color: #8ca726; border: 1px solid #8ca726;">
+            </div>
+
+         	<div class="search_text col-xs-10 col-xs-offset-1" data-event-date="20-Jan-2019" data-index="3" id="blog_3">
+            	<div class="col-xs-12">
+	                <h2 class="blog_text_main">Strategic importance of Intellectual Property in Mergers and Acquisitions</h2>
+	                <p class="blog_text_main_date"> JANUARY 20, 2019 | BHUVNESH SHARMA</p>
+	                <p class="blog_text_main_para">Did you know that Volkswagen purchased Rolls Royce Motor Company without realizing that they did not own Rolls Royce name and its trademark, and that name and trademark was owned by BMW, a direct competitor to Volkswagen? Seems incredulous, but this did happen, and VW purchased all rights to manufacture Rolls Royce car along with the Rolls Royce factory and staff in Crewe, UK but did not have any rights to brand it with the same name. Neither they had any engines for its car as BMW was producing engines for Rolls Royce. Rolls Royce factory in Crewe was manufacturing both Rolls Royce and Bentley cars. Eventually, after lot of twist and turns, BMW finally became Rolls Royce owner in 2003 and is now its exclusive manufacturer. VW is now sole manufacturer of Bentley cars.</p>
+                </div>
+                <div class="col-xs-12 read-more-text" id="read_more_3">
+                	<p>So what does this story teach you?</p>
+                	<p>In any merger and acquisition proper due diligence is the key and in particular proper due diligence of Intellectual Property (IP) is a must. In absence of this, it might as well be that you miss out on something very important and strategic to your business. Mergers and acquisitions inherently are risky and given the amount of technology turnover these days, it has become even more riskier. Most of the times organizations have myriad range of products and their variants and this adds to an already complex situation. This is where the value of proper IP audit and its associated value comes into picture.</p>
+                	<p>Intellectual Property assets and their due diligence, in quite a few cases, comes as an afterthought, whereas it should be the other way around. In some case it has also been found out that IP assets start getting valuated after the deal has already been done.</p>
+                	<p>A pertinent question that comes to our mind is that when should we initiate IP due diligence?</p>
+                	<p>My answer to this would be, that very instance when you have decided to acquire any company and its assets. There is lot of information that is publicly available for example   patents, trademarks, copyrights etc. and this is a good source to initiate this activity. By the time you initiate a formal contact with the target company, you would have already done your homework and are relatively in a good position to lead M&A negotiations.</p>
+                	<p>Needless to say that as the amount of importance we give to value our physical, tangible assets the same way we need to focus on the intangible assets like IP to get a fair valuation.</p>
+                	<p>Want to learn more on this?<br>Call: +91 96203 00550<br>Email: bhuvnesh@plakxa.com</p>
+                </div>
+            	<div class="col-xs-12">
+            		<button class="read-more-btn" id="read_more_btn_3" style="float: right; color: #8ca726; font-weight: bold; background-color: transparent; border: none; outline: none;">Read More &#9660;</button>
+            	</div> 
+				<hr style="color: #8ca726; border: 1px solid #8ca726;">
+			</div>
+		</div>
+
+		<!-- Contact Us -->		
+		<div class="col-xs-12" id="contact-us">
+			<div class="col-xs-10 col-xs-offset-1">
+				<div class="col-xs-12 contact-sub">
+					<div class="col-xs-4 full-width">
+						<div class="col-xs-12">Email Us:</div>
+						<div class="col-xs-12"><i class='fas fa-envelope footer-icons'></i> info@plakxa.com</div>
+						<div class="col-sm-12 col-xs-12 social-icons">Follow us on
+			        		<a href="https://www.facebook.com/plakxa2019" target="_blank"><i class='fab fa-facebook-square soc-icon1 fb-icon'></i></a>
+			        		<a href="https://www.linkedin.com/company/plakxa-business-consulting-llp" target="_blank"><i class='fab fa-linkedin soc-icon2 ln-icon'></i></a>
+			        	</div>
+					</div> 
+					<div class="col-xs-4 full-width bottom-space">
+						<div class="col-xs-12">Call Us:</div>
+						<div class="col-xs-12"><i class='fas fa-phone footer-icons'></i> +91 962 030 0550</div>
+					</div> 
+					<div class="col-xs-4 full-width bottom-space">
+						<div class="col-xs-12">Address:</div>
+						<div class="col-xs-12"><i class='fas fa-map-marker-alt footer-icons'></i> 213, Sobha Aquamarine, Sarjapur Outer Ring Road, Bellandur, Bangalore,<br>Pin - 560103</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-1" style="margin-top: 5%;">
+				<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
